@@ -9,6 +9,9 @@ Todo::Todo(QWidget* parent)
 	QObject::connect(ui.reloadTasks, SIGNAL(clicked()), this, SLOT(reloadTasksFromJson()));
 	QObject::connect(ui.upbtn, SIGNAL(clicked()), this, SLOT(closeTaskInputArea()));
 
+
+	createShortcuts();
+
 	scrollTaskAreaLayout = new QVBoxLayout(this);
 	scrollTaskAreaLayout->setAlignment(Qt::AlignTop); // makes sure that when adding widgets it places them on the top rather than the center(default)
 
@@ -42,6 +45,12 @@ void Todo::removeItemsInLayout(QLayout* layout)
 		}
 		delete item;
 	}
+
+}
+
+void Todo::createShortcuts()
+{
+	new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_S), this, SLOT(saveTasks()));
 
 }
 
@@ -102,6 +111,7 @@ void Todo::closeEvent(QCloseEvent* event)
 
 void Todo::saveTasks()
 {
+	qDebug() << "Adasd";
 	nlohmann::json j;
 	auto json = nlohmann::json::array();
 

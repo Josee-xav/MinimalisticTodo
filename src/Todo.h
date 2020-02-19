@@ -36,12 +36,12 @@ private slots:
 
 	// removes the task. By getting the sender tasklayout and then removing that tasklayout from the scrollarea
 	void deleteTask();
-private:
 	void saveTasks();
+private:
 	void addTask(std::string taskText);
 
 	void removeItemsInLayout(QLayout* layout);
-
+	void createShortcuts();
 
 	QVBoxLayout* scrollTaskAreaLayout;
 	std::vector <std::string> tasksText;
