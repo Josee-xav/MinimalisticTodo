@@ -25,7 +25,7 @@ empty
 ## UI Image
 
 <p align="center">
-  <img width="405" height="643" src="https://raw.githubusercontent.com/danieljo12/MinimalistiTodo/master/appimage.PNG">
+  <img width="405" height="643" src="https://raw.githubusercontent.com/danieljo12/MinimalisticTodo/master/appui.PNG">
 </p>
 
 
