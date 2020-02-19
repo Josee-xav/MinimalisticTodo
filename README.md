@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="160" height="160" src="https://raw.githubusercontent.com/danieljo12/MinimalistiTodo/master/toodo.png">
+  <img width="160" height="160" src="https://raw.githubusedrcontent.com/danieljo12/MinimalistiTodo/master/toodo.png">
 </p>
 <p align="center">
   A minimalistic Todo app that is made with QT 
