@@ -18,10 +18,6 @@
 * Ctrl + s - saves tasks
 
 ## If you have any ideas to make this app better just put an issue and suggest the feature. Im happy to implement it if its a good idea
-
-## TODO
-empty
-
 ## UI Image
 
 <p align="center">
