@@ -14,9 +14,6 @@
 ## Command line args
 * --loadjson  This command loads the default json file called Taskss.json that should have tasks. later i may add a way to specfiy ur own json file name and such
 
-## Short cuts
-* Ctrl + s - saves tasks
-
 ## If you have any ideas to make this app better just put an issue and suggest the feature. Im happy to implement it if its a good idea
 ## UI Image
 
