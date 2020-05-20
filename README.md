@@ -2,7 +2,7 @@
   <img width="160" height="160" src="https://raw.githubusercontent.com/danieljo12/MinimalisticTodo/master/toodolo.png">
 </p>
 <p align="center">
-  A minimalistic Todo app that is made with QT 
+  A minimalistic Todo app that is made with QT STILL IN WIP BUT WORKS
 </p>
 
 ------
