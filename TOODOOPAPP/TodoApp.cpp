@@ -10,7 +10,7 @@ TodoApp::TodoApp(QWidget* parent)
 	QObject::connect(ui.reloadTasksBtn, SIGNAL(clicked()), this, SLOT(reloadTasksFromJson()), Qt::QueuedConnection);
 	QObject::connect(ui.upbtn, SIGNAL(clicked()), this, SLOT(closeTaskInputArea()), Qt::QueuedConnection);
 
-	scrollTaskAreaLayout = new QVBoxLayout(this);
+	scrollTaskAreaLayout = new QVBoxLayout(this); 
 	scrollTaskAreaLayout->setAlignment(Qt::AlignTop); // makes sure that when adding widgets it places them on the top rather than the center(default)
 
 	ui.scrollAreaWidgetContents->setLayout(scrollTaskAreaLayout); // adds the vertical layout to the scrolls area
@@ -69,7 +69,7 @@ void TodoApp::addTask(std::string taskText)
 
 	connect(task, SIGNAL(sendDelete()), this, SLOT(deleteTask()));
 
-	scrollTaskAreaLayout->addWidget(task);
+	scrollTaskAreaLayout->insertWidget(0,task); // makes sure that the newest note is always on top :)
 
 	tasksText.push_back(taskText); // adds the task text to a vector so we can use it to save the text
 

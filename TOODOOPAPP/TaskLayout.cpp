@@ -3,12 +3,12 @@
 
 TaskLayout::TaskLayout(QString taskText)
 {
-	horLayout = new QHBoxLayout();
+	horLayout = new QHBoxLayout(this);
 	horLayout->setSpacing(0);
 	horLayout->setContentsMargins(0, 0, 0, 0);
 
-	textBox = new QPlainTextEdit();
-	checkBox = new QCheckBox();
+	textBox = new QPlainTextEdit(this);
+	checkBox = new QCheckBox(this);
 
 	// sends a click() to the signal so it can emit.
 	connect(checkBox, &QAbstractButton::clicked, this, &TaskLayout::sendDelete);
